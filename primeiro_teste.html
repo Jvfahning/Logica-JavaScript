@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function escrevaTexto(texto) {
+
+		document.write(texto);
+	}
+
+	function escrevePula(textoLinha) {
+
+		document.write(textoLinha);
+		pulaLinha();
+
+	}
+	
+	var ano = 2022;
+	var idadeJoao = 18;
+	var idadeWup = 47;
+	var idadeAna = 46;
+	var media = (idadeJoao+idadeWup+idadeAna)/3;
+	
+	alert("Servidor ok");
+
+	escrevePula("Joao tem " + (ano-2004) + " anos");
+	
+	escrevePula("Wup tem " + (ano-1975) + " anos");
+	
+	escrevePula("Ana tem " + (ano-1976) + " anos");
+	
+	escrevaTexto("A média das idades é " + media + " anos");
+
+</script>

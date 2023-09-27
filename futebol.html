@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><hr><br>");
+
+	}
+
+	function escrevePula(textoLinha) {
+
+		document.write(textoLinha);
+		pulaLinha();
+
+	}
+
+	var vitorias = parseInt(prompt("Informe o número de vitórias"));
+	
+	var empates = parseInt(prompt("Informe o número de empates"));
+
+	var pontos = (vitorias * 3) + empates;
+
+	escrevePula("O número de pontos do seu time é " + pontos);
+
+	if(pontos > 28) {
+
+		escrevePula("A campanha atual do seu time é melhor que a do ano passado");
+	}
+
+	if(pontos < 28) {
+
+		escrevePula("A capanha atual do seu time é pior que a do ano passado");
+	}
+
+	if (pontos == 28) {
+
+		escrevePula("A campanha atual do seu time é a mesma que a do ano passado");
+	}
+
+</script>

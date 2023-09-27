@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function escrevePula(texto) {
+
+		document.write(texto);
+		pulaLinha();
+	}
+
+	var numeroSorteado = Math.round(Math.random() * 10);
+
+	var tentativas = 1;
+
+	while(tentativas <= 3) {
+
+		var numero = parseInt(prompt("Você tem 3 chances para acertar um número de 0 a 10, qual número você vai chutar?"));
+
+		if(numero == numeroSorteado) {
+
+		escrevePula("VOCÊ ACERTOU!!!");
+		
+		escrevePula("O número pensado foi " + numeroSorteado);
+		
+		break;
+		
+		}
+
+		for(var erro = 1; erro <= 1; erro = 1){
+			else {
+
+			escrevePula("VOCÊ ERROU :(");
+		
+				}
+		}
+		
+		tentativas++;
+	}
+
+</script>

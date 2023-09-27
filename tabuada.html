@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function escrevePula(textoLinha) {
+
+		document.write(textoLinha);
+		pulaLinha();
+	}
+
+	var numero = 7;
+	
+	for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+		escrevePula( numero + " x " + multiplicador + " é igual a " + (numero * multiplicador));
+	}
+
+</script>
+
